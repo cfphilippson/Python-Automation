@@ -2,7 +2,7 @@
 # O intuito desse script é levantar na internet quais as extensões do 
 # Chrome estão relacionadas a um determinado Extension ID coletado do Cortex XDR
 # O input são os IDs extraidos do Cortex e o output é uma planilha de Excel contendo as URLs da Google Chrome Extension Store
-
+# Não esquecer de instalar as libs requests, pandas, beautifulSoup e do Excel, caso contrário irá dar erro na compilação
 
 import requests
 from bs4 import BeautifulSoup
@@ -27,7 +27,7 @@ def processar_ids(ids):
     return resultados
 
 # Lista de IDs das extensões
-extension_ids = ["jlhmfgmfgeifomenelglieieghnjghma", "eaanhanppiifopiabnfmhjbikjmeeale", "gighmmpiobklfepjocnamgkkbiglidom"]  # Substitua pelos IDs reais
+extension_ids = ["id1", "id2", "id3"]  # Substitua pelos IDs reais
 
 # Processando os IDs
 resultados = processar_ids(extension_ids)
